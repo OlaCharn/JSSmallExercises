@@ -71,3 +71,35 @@ function displayMinAndMax(a,b,c){
     return ([minNumber, maxNumber])
 }
 console.log(displayMinAndMax(10,15,25))
+
+//5 определить четное или нечетное число
+function EvenOrOddNumber(x){
+    if(x%2===0){
+        console.log("Even!")
+    }
+    else{
+        console.log("Odd!")
+    }
+
+}
+EvenOrOddNumber(5) //Odd!
+EvenOrOddNumber(2) //Even!
+EvenOrOddNumber(10) //Even!
+
+//Факториал числа определить
+//Факториал это произведение всех натуральных чисел от данного числа к 1
+//Например 5!= 5*4*3*2*1 = 120
+//При этом факториал 1 или 0 всегда = 1
+//Это важный пример для собеседования
+//Так как на нем можно показать рекурсивную функцию-
+//вызов функции внутри себя до тех пор, пока не исполнится некое условие
+
+function factorial(n){
+    if(n<=1){
+        return 1;
+    }
+    else {
+        return n * factorial(n-1)
+    }
+}
+console.log(factorial(5))
