@@ -103,3 +103,38 @@ function factorial(n){
     }
 }
 console.log(factorial(5))
+
+
+//7. cумма чисел в массиве
+
+function sumAllMembers(a){
+    let result = 0
+    for(let i=0; i<a.length; i++){
+        result+= a[i]
+    }
+    return result
+}
+
+let a = [1,2,3,4]
+let result = sumAllMembers(a)
+console.log(result) //10
+
+//8. Поиск элемента в массиве
+
+function findElement(arr8,e){
+    return arr8.includes(e)
+}
+let arr8 = [1,2,3,6,7]
+let e = 1
+console.log(findElement(arr8,e)) //true
+
+
+//9. Реверс строки
+
+function letReverseString(str){
+    return str.split("").reverse().join("")
+}
+let str9 = "abc"
+
+console.log(letReverseString(str9)) //cba
+
